@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <ul class="service-list">
+        <li><div class="service-item"><a asp-area="" asp-controller="Home" asp-action="RandomNumber">Random num</a></div></li>
+        <li><div class="service-item"><a asp-area="" asp-controller="Home" asp-action="Time">Time</a></div></li>
+        <li><div class="service-item"><a asp-area="" asp-controller="Home" asp-action="ViewingVisits">Visit statistic</a></div></li>
+        <li><div class="service-item"><a asp-area="" asp-controller="Cookie" asp-action="Index">Cookie</a></div></li>
+        <li><div class="service-item"><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></div></li>
+    </ul>
+
+    @RenderBody()
+</body>
+</html>

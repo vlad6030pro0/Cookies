@@ -1,0 +1,48 @@
+@model Microsoft.AspNetCore.Http.IRequestCookieCollection
+<head>
+    <link rel="stylesheet" href="~/css/cookie.css" asp-append-version="true" />
+    <title>Cookie Control</title>
+</head>
+
+<body>
+    <h1><u>Cookie</u></h1>
+    <div class="cookie_view">
+        <div class="funcs">
+            <div class="create">
+                <h2>Создание</h2>
+                <form asp-action="AddCookie">
+                    <input type="text" name="name" placeholder="name">
+                    <input type="text" name="info" placeholder="info">
+                    <button type="submit">Создать</button>
+                </form>
+            </div>
+
+            <div class="edit">
+                <h2>Изменение</h2>
+                <form asp-action="EditCookie">
+                    <input type="text" name="name" placeholder="name">
+                    <input type="text" name="info" placeholder="info">
+                    <button type="submit">Изменить</button>
+                </form>
+            </div>
+
+            <div class="delete">
+                <h2>Удаление</h2>
+                <form asp-action="DeleteCookie">
+                    <input type="text" name="name" placeholder="name">
+                    <button type="Delete">Удалить</button>
+                </form>
+            </div>
+        </div>
+        <div class="cookies_list">
+            <h2>Список:</h2>
+            <ul class="cookies_items">
+                <li style="font-weight: bold; text-decoration: underline;">Название: информация</li>
+                @foreach(var cookie in @Model){
+                    <li title="@cookie.Value">@cookie.Key: @cookie.Value</li>       
+                }
+            </ul>
+        </div>
+    </div>
+</body>
+

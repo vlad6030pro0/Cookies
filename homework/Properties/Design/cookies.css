@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+    background-color: black;
+    color: white;
+}
+
+.cookie_view {
+    display: flex;
+    flex-direction: row;
+}
+
+.cookies_list {
+    background-color: rgb(36, 34, 34);
+    border-radius: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    width: 300px;
+    height: 480px;
+}
+
+.cookies_items {
+    list-style: none;
+    padding: 10px;
+    background-color: rgb(65, 61, 61);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    width: 250px;
+
+    white-space: nowrap;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
+
+.cookies_items li {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.funcs {
+    background-color: rgb(36, 34, 34);
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.funcs div {
+    border: 1px solid rgb(182, 0, 0);
+    width: 200px;
+    margin: 10px;
+    background-color: rgb(65, 61, 61);
+    border-radius: 10px;
+    padding: 10px 10px 7px 10px;
+}
+
+.funcs input {
+    margin: 3px;
+}
+
+.funcs button {
+    margin-top: 15px;
+    width: 50px;
+}
+
+.funcs h2 {
+    margin-bottom: 10px;
+}
